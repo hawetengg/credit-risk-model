@@ -1,20 +1,3 @@
-# tests/test_data_processing.py
-import sys
-import os
-
-print("\n--- Debugging sys.path (from test_data_processing.py) ---")
-print("Current Working Directory:", os.getcwd())
-print("PYTHONPATH environment variable:", os.environ.get('PYTHONPATH'))
-print("sys.path contents:")
-for i, p in enumerate(sys.path):
-    print(f"  [{i}]: {p}")
-print("--- End Debugging sys.path ---\n")
-
-# The line that's failing, keep it here to see if the path is fixed before it runs:
-from src.data_processing import load_data, extract_temporal_features
-
-# ... rest of your test code
-
 import pytest
 import pandas as pd
 from src.data_processing import load_data, extract_temporal_features
