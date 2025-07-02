@@ -3,4 +3,6 @@ numpy
 scikit-learn
 jupyter
 matplotlib
-seaborn
+seabornfastapi
+uvicorn
+flake8
